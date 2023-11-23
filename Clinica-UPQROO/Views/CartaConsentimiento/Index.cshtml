@@ -1,0 +1,138 @@
+﻿@model Clinica_UPQROO.Models.CartaConsentimiento
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carta de Consentimiento</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 50px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .mt-4 {
+            margin-top: 1.5rem;
+        }
+
+        h4 {
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        .firma {
+            border-top: 2px solid #007bff;
+            padding-top: 48px;
+        }
+
+            .firma p {
+                margin-bottom: 10px;
+            }
+
+        .linea-firma {
+            border-top: 1px solid #000;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .firma-texto {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>CARTA DE CONSENTIMIENTO INFORMADO</h2>
+        <p class="text-end">Cancún, Quintana Roo a @DateTime.Now.ToString("dd 'de' MMMM 'del' yyyy")</p>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <p class="text-justify">
+                    Yo, [Nombre], por mi propio derecho o en representación del (la) menor o persona con discapacidad [NombrePaciente], expreso mi amplio CONSENTIMIENTO para recibir la valoración y el tratamiento fisioterapéutico necesario en mi
+                    persona o mi representado (a), hago constar que el personal de la clínica de la licenciatura en terapia física de
+                    la Universidad Politécnica de Quintana Roo me ha explicado lo relacionado con el padecimiento, el tipo de
+                    tratamiento que recibiré  y/o recibirá mi representado, las secuelas y posibles riesgos que se pudieran presentar
+                    como consecuencia del padecimiento y del tratamiento en fisioterapia, así mismo autorizo al personal del área
+                    de fisioterapia para la atención de eventualidades y urgencias derivadas del  mismo. Al ser una clínica
+                    universitaria también se me ha informado y estoy de acuerdo con que la información recopilada durante el
+                    tratamiento se utilice para fines educativos y de investigación.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>USUARIO</h4>
+                <p>Nombre: [Nombre]</p>
+                <p>Diagnóstico: [Diagnostico]</p>
+                <p>Edad: [Edad]</p>
+                <p>Número de expediente: [NumeroExpediente]</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>TUTOR DEL USUARIO</h4>
+                <p>Nombre del tutor: [NombreTutor]</p>
+                <p>Edad: [EdadTutor]</p>
+                <p>Parentesco: [ParentescoTutor]</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>FISIOTERAPEUTA</h4>
+                <p>Fisioterapeuta encargado(a): [NombreFisioterapeuta]</p>
+                <p>Cédula: [CedulaFisioterapeuta]</p>
+                <p>Alumno(a) tratante: [NombreAlumno]</p>
+                <p>Matrícula: [MatriculaAlumno]</p>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h4>TESTIGO</h4>
+                <p>Nombre: [NombreTestigo]</p>
+                <p>Edad: [EdadTestigo]</p>
+                <p>Sexo: [SexoTestigo]</p>
+                <p>Teléfono: [TelefonoTestigo]</p>
+            </div>
+        </div>
+
+        <div class="row mt-4 firma">
+            <div class="col-md-4 firma-texto">
+                <div class="linea-firma"></div>
+
+                Firma del usuario o tutor
+            </div>
+            <div class="col-md-4 firma-texto">
+                <div class="linea-firma"></div>
+
+                Firma del fisioterapeuta
+            </div>
+            <div class="col-md-4 firma-texto">
+                <div class="linea-firma"></div>
+
+                Firma del testigo
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

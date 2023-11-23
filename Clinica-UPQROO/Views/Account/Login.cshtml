@@ -1,0 +1,91 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+    <style>
+        body {
+            background-size: cover;
+        }
+
+        .login-container {
+            margin-top: 50px;
+        }
+
+        .login-box {
+            background: #ffffff;
+            padding: 24px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons {
+            margin-top: 24px;
+        }
+
+        .social-icons a {
+            margin-right: 16px;
+        }
+    </style>
+</head>
+<body>
+    <section class="hero is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered login-container">
+                <div class="column is-4 is-offset-4">
+                    <div class="box login-box">
+                        <h3 class="title is-3">Login</h3>
+                        <form asp-action="Login" asp-controller="Account">
+                            <div class="field">
+                                <label class="label">Email</label>
+                                <div class="control">
+                                    <input type="text" class="input" name="email" placeholder="Enter your email">
+                                </div>
+
+                            </div>
+                            <div class="field">
+                                <label class="label">Password</label>
+                                <div class="control">
+                                    <input type="password" class="input" name="pass" placeholder="Enter your password">
+                                </div>
+                            </div>
+                            <div class="field">
+                                <hr>
+                                <div class="control has-text-centered">
+                                    <button type="submit" class="button is-success">Login</button>
+                                </div>
+                            </div>
+                        </form>
+                        <div class="has-text-right">
+                            <a href="#">Forgot password?</a>
+                        </div>
+                        <hr>
+                        <div class="social-icons">
+                            <a href="#" class="btn btn-primary">
+                                <i class="bi bi-facebook"></i> Facebook
+                            </a>
+                            <a href="#" class="btn btn-danger">
+                                <i class="bi bi-google"></i> Google
+                            </a>
+                        </div>
+
+                        <div class="has-text-centered">
+                            <hr>
+                            <p class="is-size-6">Or Sign Up Using</p>
+                            <hr>
+                            <a href="#" class="button is-link is-outlined">Sign Up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
