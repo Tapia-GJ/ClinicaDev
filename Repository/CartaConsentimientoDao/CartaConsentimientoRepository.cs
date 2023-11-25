@@ -19,10 +19,6 @@ namespace Repository.CartaConsentimientoDao
             _context = context;
         }
 
-        //public List<CartaConsentimiento> GetAll()
-        //{
-        //    return _context.CartaConsentimientos.ToList();
-        //}
         //public int Create(CartaConsentimiento model)
         //{
         //    try
